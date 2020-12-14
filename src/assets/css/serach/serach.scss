@@ -1,0 +1,52 @@
+.search-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 23;
+
+    .search-head {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        width: 345px;
+        background: #ffffff;
+        z-index: 23;
+
+        .go-back ,.shop-cart{
+            margin-left: 6px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .search-dom {
+            flex: 1;
+            .shop-car{
+                font-size: 15px;
+            }
+        }
+       
+    }
+
+    .like-list {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        padding-left: 35px;
+    }
+    .history{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    .goods-list {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

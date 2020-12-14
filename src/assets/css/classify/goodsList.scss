@@ -1,0 +1,68 @@
+.goods-list {
+  display: flex;
+  position: fixed;
+  width: 296px;
+  right: 0;
+  top: 140px;
+  bottom: 50px;
+  overflow: auto;
+  background: #ffffff;
+  .sort {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    position: fixed;
+    top: 140px;
+    right: 0;
+    width: 296px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    z-index: 23;
+    li {
+      position: relative;
+      width: 50px;
+      margin-right:  13px;
+      text-align: center;
+      color: #cecece;
+    }
+
+    .price::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 15px;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid #aaa;
+      border-left: 4px solid transparent;
+    }
+
+    .price::after {
+      content: "";
+      position: absolute;
+      bottom: 15px;
+      right: 0;
+      border-top: 4px solid #aaa;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+
+    .active,
+    .price-up,
+    .price-down {
+      color: #ff1a90;
+      font-weight: bold;
+    }
+
+    .price-up::before {
+      border-bottom-color: #ff1a90;
+    }
+
+    .price-down::after {
+      border-top-color: #ff1a90;
+    }
+  }
+  .list{
+    margin-top: 35px;
+  }
+}

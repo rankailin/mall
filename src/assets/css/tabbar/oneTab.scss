@@ -1,0 +1,59 @@
+.one-navigetion-wrappser {
+  display: flex;
+   height: 90px;
+   margin-top:5px ;
+   overflow: auto;
+   .one-menu-list {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     height: 80px;
+     box-sizing: border-box;
+     .one-menu {
+       width: 61px;
+       height: 80px;
+       margin: 0 5px;
+       .img-wrapper {
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         width: 50px;
+         height: 50px;
+         line-height: 50px;
+         box-sizing: border-box;
+         border-width: 2px;
+         border-style: solid;
+         border-color: #ffffff;
+         border-radius: 23px;
+         box-sizing: border-box;
+         img {
+           width: 45px;
+           height: 45px;
+           border-radius: 50%;
+           align-self: center;
+         }
+       }
+       .menu-title {
+         display: inline-block;
+         font-size: 12px;
+         margin-top: 0px;
+         padding: 1px;
+         text-align: center;
+         border-radius: 3px;
+       }
+     }
+     .active {
+       .img-wrapper {
+         border-color: #d13193;
+       }
+       .menu-title {
+         font-weight: bold;
+         background: #d13193;
+         color: #ffffff;
+       }
+     }
+   }
+ }
+ .one-navigetion-wrappser::-webkit-scrollbar {
+   display: none; // 重点
+ }

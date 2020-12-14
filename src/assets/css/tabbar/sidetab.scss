@@ -1,0 +1,21 @@
+.sidetab-wrapper {
+    position: fixed;
+    width: 79px;
+    left: 0;
+    top: 140px;
+    bottom: 50px;
+    overflow: auto;
+    background: #ffffff;
+    div {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .active {
+      font-weight: bold;
+      color: #ff1a90;
+    }
+  }
+  .sidetab-wrapper::-webkit-scrollbar {
+    display: none; // 重点
+  }
