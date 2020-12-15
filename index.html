@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="icon" href="https://www.ele.me/favicon.ico"><link rel="stylesheet" href="css/reset.css"><title>每日优鲜</title><link href="css/chunk-0c2bed26.4da5dfc0.css" rel="prefetch"><link href="css/chunk-386a7ece.ee6efbb4.css" rel="prefetch"><link href="css/chunk-3cd41641.3fd7cefb.css" rel="prefetch"><link href="js/chunk-0c2bed26.3772498c.js" rel="prefetch"><link href="js/chunk-386a7ece.f04e5675.js" rel="prefetch"><link href="js/chunk-3cd41641.2d074ee0.js" rel="prefetch"><link href="css/app.2a1e4dcb.css" rel="preload" as="style"><link href="css/chunk-vendors.5819a784.css" rel="preload" as="style"><link href="js/app.095e0ff0.js" rel="preload" as="script"><link href="js/chunk-vendors.19486d0e.js" rel="preload" as="script"><link href="css/chunk-vendors.5819a784.css" rel="stylesheet"><link href="css/app.2a1e4dcb.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but mall_app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>window.onload = function () {
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      })
+      var lastTouchEnd = 0;
+      document.addEventListener('touchend', function (event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false)
+    }</script><script src="js/chunk-vendors.19486d0e.js"></script><script src="js/app.095e0ff0.js"></script></body></html>
